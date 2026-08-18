@@ -35,3 +35,7 @@ Thumbs.db
 # Misc
 *.log
 coverage/
+node_modules
+
+# npm config
+.npmrc
