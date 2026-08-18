@@ -3,5 +3,7 @@
   "outputDirectory": "dist",
   "installCommand": "npm install",
   "devCommand": "npm run dev",
-  "framework": "vite"
+  "framework": "vite",
+  "nodeVersion": "20.x",
+  "regions": ["iad1"]
 }
