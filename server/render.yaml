@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: gada-assembly-backend
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        value: https://kpijtnyoegpclvpngxch.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtwaWp0bnlvZWdwY2x2cG5neGNoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcwMDk2NDAsImV4cCI6MjEwMjU4NTY0MH0.juoAdQ7fCG9ptfCZ8ipHwNYMsYCfq-s28EyjKdK6dc0
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtwaWp0bnlvZWdwY2x2cG5neGNoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzAwOTY0MCwiZXhwIjoyMTAyNTg1NjQwfQ.CHMPs_htpaW4ywJDnhM60mJNgXVMtMCiQk_6isPVe-E
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        value: https://gada-assembly.vercel.app
+      - key: PORT
+        value: 5000
