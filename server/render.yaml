@@ -20,6 +20,6 @@ services:
       - key: JWT_REFRESH_SECRET
         generateValue: true
       - key: CLIENT_URL
-        value: https://gada-assembly.vercel.app
+        value: https://client-nine-chi-54.vercel.app
       - key: PORT
         value: 5000
