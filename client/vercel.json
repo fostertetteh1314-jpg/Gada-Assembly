@@ -1,7 +1,7 @@
 {
-  "buildCommand": "pnpm run build",
+  "buildCommand": "yarn build",
   "outputDirectory": "dist",
-  "installCommand": "pnpm install",
-  "devCommand": "pnpm dev",
+  "installCommand": "yarn install",
+  "devCommand": "yarn dev",
   "framework": "vite"
 }
